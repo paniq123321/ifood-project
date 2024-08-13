@@ -2,6 +2,7 @@
 import { Search, MapPin, LogIn,Backpack } from 'lucide-react';
 import Image from "next/image";
 import Logo from '@/images/logoTimeTeat.jpg'
+import Link from 'next/link';
 
 export const Navbar = () => {
   return(
@@ -25,9 +26,9 @@ export const Navbar = () => {
           location...
         </div>
       </div>
-      <div className='flex items-center justify-center'>
+      <Link href='/log-in' className='flex items-center justify-center'>
         <LogIn size='1.5rem'/>
-      </div>
+      </Link>
       <div className='flex items-center justify-center'>
         <Backpack className='mr-1' size='1.5rem'/>
         <div>
