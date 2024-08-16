@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function SignInPage() {
   return (
-    <main className="grid xl:grid-cols-2 min-h-screen">
+    <main className="grid 1225:grid-cols-2 min-h-screen">
       <section
         className={`relative flex flex-col gap-4 p-12 justify-center items-center`}
       >
@@ -15,7 +15,7 @@ export default function SignInPage() {
         </Link>
         <h2 className="text-center text-3xl font-bold text-primary">Login</h2>
         <LoginForm />
-        <div className="flex gap-4">
+        <div className="flex justify-between w-full max-w-[40rem] font-light text-[.8rem]">
           <button>
             <Link href='/'>I don`t have an account yet</Link>
           </button>
@@ -25,7 +25,7 @@ export default function SignInPage() {
         </div>
       </section>
       <section
-        className="hidden xl:block bg-cover bg-center"
+        className="hidden 1225:block bg-cover bg-center"
         style={{backgroundImage: `url(${RightSide.src})`}}
       ></section>
     </main>
