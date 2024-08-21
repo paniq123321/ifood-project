@@ -26,7 +26,7 @@ export const Navbar = () => {
           location...
         </div>
       </div>
-      <Link href='/log-in' className='flex items-center justify-center'>
+      <Link href='/sign-in' className='flex items-center justify-center'>
         <LogIn size='1.5rem'/>
       </Link>
       <div className='flex items-center justify-center'>

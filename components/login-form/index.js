@@ -1,20 +1,12 @@
 'use client'
 import React, {useState} from 'react'
 import { useFormik } from 'formik';
-import ReCaptcha from './ReCaptcha'
 
 export const LoginForm = () => {
-  const [captchaValue, setCaptchaValue] = useState(null);
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value)
-    formik.setFieldValue('captcha', value);
-    console.log(value)
-  }
   const formik = useFormik({
     initialValues: {
       email: '',
       password: '',
-      captcha: ''
     },
     onSubmit: values => {
       alert(JSON.stringify(values, null, 2));
@@ -43,11 +35,6 @@ export const LoginForm = () => {
         className={'border rounded-md p-[.5rem] block mb-8 w-full'}
         placeholder='Password'
       />
-      <ReCaptcha
-        onChange={handleCaptchaChange}
-      />
-
-
       <button type="submit" className='border rounded-xl w-full p-4 text-white bg-black font-light mt-8'>Enter in account</button>
     </form>
   );

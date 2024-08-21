@@ -17,10 +17,10 @@ export default function SignInPage() {
         <LoginForm />
         <div className="flex justify-between w-full max-w-[40rem] font-light text-[.8rem]">
           <button>
-            <Link href='/'>I don`t have an account yet</Link>
+            <Link href='/sign-up'>I don`t have an account yet</Link>
           </button>
           <button>
-            <Link href="#">I forgot my password</Link>
+            <Link href="/">I forgot my password</Link>
           </button>
         </div>
       </section>
